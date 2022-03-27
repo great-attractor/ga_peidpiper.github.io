@@ -1,2 +1,2 @@
-# ga_peidpiper.github.io
+# ga_peidpiper
 peidpiper
