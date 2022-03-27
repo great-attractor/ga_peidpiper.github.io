@@ -1,0 +1,285 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+  
+  .html{
+      box-sizing: border-box; /*paddings не меняют ширину блока*/
+      width: 1219px;
+      max-width: 100%;
+  }
+  *, *::before, *::after {
+   box-sizing: border-box;   
+  }
+
+  .body{
+      font-family: 'Roboto';
+      font-style: medium;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 500;
+      color: black;
+      
+  }
+
+  #Header_site, #problem_link, #PiedPiperCoin, #team{
+    position: absolute; 
+    margin-top: -90px;
+
+  }
+
+  
+   /*header styles start*/
+  .header{
+      background-color: #007765;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+    }
+  /*блок для контента создает одинаковое выравнивание*/
+  .wrapper{
+    width: 1219px;
+    max-width: 100%;
+    margin: 0 auto; 
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+  .header_wrapper{
+     display: flex; 
+     flex-wrap: wrap;
+     align-items: center; /*было center*/
+     justify-content: space-between;
+     padding-top: 20px;
+     padding-bottom: 20px;
+  }
+  
+
+  .header_list{
+     display: flex; 
+     flex-wrap: wrap;
+     /*убираем стандартные маркеры списка*/
+     list-style-type: none;
+     margin: 0px;
+     
+     
+  }
+  
+  .header_item{
+      margin-right: 8px; 
+      
+  }
+  .header_item:last-child{
+    margin-right: 0px;
+  }
+  .header_link{
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0px;
+    font-family: 'Roboto';
+
+  }
+  /*изменение вида ссылок при взаимодействии*/
+.header_link:hover, .header_link:focus, .header_link:active{
+opacity: 75%;
+} 
+/*header styles end*/
+
+/*intro styles start*/
+.intro{
+  height: 403px;
+  width: 100%;
+  background: url(./img/intro.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 160px;
+  padding-bottom: 160px;
+  
+}
+.intro_title{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 84px;
+  text-align: center;
+  color: #FFFFFF;
+ 
+}
+
+.problem{
+  background: #EEEEEE;
+  width: 100%;
+  
+  
+}
+.problem_title{
+ font-family: 'Roboto';
+ font-style: normal;
+ font-weight: 500;
+ font-size: 64px;
+ line-height: 75px;
+ text-align: center;
+ color: #007765;
+ padding-top: 48px;
+ margin-top: 0;
+}
+.problem_article{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+  padding-bottom: 92px;
+  
+}
+.tagline{
+  width: 100%;
+  background: url(./img/tagline_bg.jpg) no-repeat center;
+  background-size: cover;
+  
+}
+.tagline_title{
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 126px 163px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.introdusing{
+  background-color: #FFFFFF;
+  width: 100%;
+  margin-top: 48px;
+  padding-top: 0;
+  margin-bottom: 92px;
+  
+}
+
+.introdusing_title{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color: #007765;
+  margin-top: 48px;
+  padding-top: 0;
+  margin-bottom: 16px;
+  padding-bottom: 0;
+}
+
+.introdusing_logo{
+  float: left;
+  padding: 0;
+  margin: 0 48px 35px 0;
+}
+
+.introdusing_text{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+}
+
+.introdusing_text_one{
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.introdusing_text_two{
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.introdusing_text_three{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*the team styles start*/
+.team{
+  background-color: #EEEEEE;
+}
+
+.team_title{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color: #007765;
+  padding-top: 48px;
+  margin-bottom: 56px;
+}
+
+.team_cards{
+   display: grid;
+   grid-template-columns: repeat(3, auto);
+   
+   
+   
+}
+
+.team_card{
+  text-align: center;
+  
+  
+}
+
+.name{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #007765;
+  text-align: center;
+  padding: 0;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.position{
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  text-align: center;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 82px;
+}
+
+
+/*the team styles end*/
+
+/*footer styles start*/
+.footer_content{
+  background-color: #333333;
+  padding-top: 50px;
+  padding-bottom: 62px;
+}
+.footer_text{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  text-align: center;
+  
+}
+/*footer styles end*/
